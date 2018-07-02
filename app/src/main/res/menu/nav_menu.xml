@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+    <item android:title="Find people"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:id="@+id/action_find"/>
+    <item android:title="Following"
+        android:icon="@drawable/ic_people_outline_black_24dp"
+        android:id="@+id/action_following"/>
+    <item android:title="Followers"
+        android:icon="@drawable/add_user"
+        android:id="@+id/action_followers"/>
+    <item android:title="Invites"
+        android:icon="@drawable/ic_insert_invitation_black_24dp"
+        android:id="@+id/action_invites"/>
+    </group>
+</menu>

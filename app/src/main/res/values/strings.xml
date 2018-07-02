@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TheNetwork</string>
+    <string name="action_search_title">Search</string>
+    <string name="account_settings_text">Account Settings</string>
+    <string name="logout_text">Logout</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="main_notification_channel_name">TheNetworkNotificationChannel</string>
+    <string name="facebook_app_id">127760904635367</string>
+    <string name="fb_login_protocol_scheme">fb127760904635367</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Integer at nisl in arcu lobortis egestas. Morbi consequat malesuada fringilla. Nullam gravida nisi a dignissim gravida.
+        Aenean convallis sed justo a facilisis. Aliquam erat volutpat.</string>
+    <string name="write_a_message">Write a message...</string>
+    <string name="dialog_title">Comments</string>
+    <string name="search">Search...</string>
+    <string name="for_search">Network</string>
+
+    <string name="follow_error_message">An unexpected error occurred, please check your connection or try again after sometime.</string>
+</resources>

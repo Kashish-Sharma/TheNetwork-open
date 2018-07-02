@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#cfd8dc</color>
+    <color name="colorAccent">#039BE6</color>
+
+    <color name="purple">#7C5ED8</color>
+
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+
+
+    <color name="c_gray0">#90A4AE</color>
+    <color name="c_blue">#1fbad6</color>
+    <color name="c_gray1">#222233</color>
+    <color name="c_gray2">#161629</color>
+    <color name="c_gray3">#09091a</color>
+
+
+    <color name="detail_accent_pane_background">#455A64</color>
+    <color name="detail_accent_label">#90A4AE</color>
+
+    <color name="pink">#EC407A</color>
+    <color name="dark_blue">#23283a</color>
+    <color name="colorTextDisable">#66FFFFFF</color>
+    <color name="red">#ff1744</color>
+    <color name="green">#00c853</color>
+    <color name="blue">#1875d1</color>
+    <color name="color_chat_background">#E3F2FD</color>
+    <color name="online_green">#64dd17</color>
+    <color name="offline_red">#e64a19</color>
+    <color name="edittextcolor">#80deea</color>
+    <color name="profilePrimaryDark">#292b3d</color>
+    <color name="graylight">#fafafa</color>
+    <color name="white">#fff</color>
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="grey">#858585</color>
+    <color name="black">#000000</color>
+    <color name="link_blue">#005ce6</color>
+    <color name="off_white">#F8F8F8</color>
+    <color name="touch_grey">#eeeeee</color>
+    <color name="transluecent_black">#80000000</color>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/message_image_single_layout_with_text"
+    android:background="@drawable/chat_touch_selector"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/text_message_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text_image_chat_date"
+        android:text="February 22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_message_image_view"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/date_background"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/text_image_chat_date"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageMessageWithText"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F8F8"
+        android:theme="@style/CardView.Light"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/message_text_layout_image_with_text_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical">-->
+
+
+                <!--<TextView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/name_text_layout_image_with_text"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_marginEnd="8dp"-->
+                    <!--android:layout_marginStart="8dp"-->
+                    <!--android:text="Display Name"-->
+                    <!--android:textColor="@android:color/black"-->
+                    <!--android:textSize="12sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--app:layout_constraintHorizontal_bias="0.086"-->
+                    <!--app:layout_constraintStart_toStartOf="parent"-->
+                    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+                <TextView
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="start"
+                    android:id="@+id/time_text_layout_image_with_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"
+                    android:text="00:00"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.054"
+                    app:layout_constraintStart_toEndOf="@+id/name_text_layout_user"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <!--<ImageButton-->
+                    <!--android:id="@+id/statusImageText"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:background="@drawable/message_status_sending"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:orientation="vertical">-->
+
+
+                    <ImageView
+                        android:layout_marginBottom="4dp"
+                        android:id="@+id/message_image_layout_with_text"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.182" />
+
+                <TextView
+                    android:id="@+id/imageText_with_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:maxLines="7"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

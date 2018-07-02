@@ -1,0 +1,2 @@
+After setting up cloud functions for your project, an index.js file will be generated.
+Replace that with this file and deploy the functions.

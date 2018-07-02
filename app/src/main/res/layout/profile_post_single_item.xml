@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="2dp"
+    android:backgroundTint="#F8F8F8"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/single_linear_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle"
+        android:id="@+id/blog_image_mini"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+</RelativeLayout>

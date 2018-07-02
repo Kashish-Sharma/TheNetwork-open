@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/comment_dialog_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thenetwork.app.android.thenetwork.Activities.CommentsActivity">
+
+    <include
+        android:id="@+id/comment_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/commentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/comment_app_bar"
+        android:layout_above="@+id/linearLayout3">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="12">
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="11"
+            android:background="@drawable/edittextrounded"
+            android:fontFamily="@font/circular_std_book"
+            android:hint="@string/write_a_message"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:alpha="0.5"
+            android:background="@android:color/white"
+            app:srcCompat="@drawable/ic_send_black_24dp" />
+    </LinearLayout>
+
+</RelativeLayout>

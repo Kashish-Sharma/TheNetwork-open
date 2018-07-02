@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/message_single_layout_user"
+    android:background="@drawable/chat_touch_selector"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:visibility="gone"
+
+        android:id="@+id/text_message_view_user"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/text_chat_date_user"
+        android:text="February 22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_message_view_user"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:background="@drawable/date_background"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/text_chat_date_user"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/cardViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:theme="@style/CardView.Light"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/message_constraint_layout_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/time_text_layout_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@+id/name_text_layout_user"
+                android:text="5 hours ago"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/message_text_layout_user"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <TextView
+                android:id="@+id/message_text_layout_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name_text_layout_user"
+                android:maxWidth="200dp"
+                android:padding="1dp"
+                android:text="Message Text"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_text_layout_user" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

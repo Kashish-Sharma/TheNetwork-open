@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:backgroundTint="#F8F8F8"
+    android:padding="5dp"
+    android:theme="@style/CardView.Light"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/single_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/eventListConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="5dp"
+            android:paddingBottom="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/event_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/circular_std_book"
+                android:gravity="start"
+                android:text="Username"
+                android:textColor="@color/dark_blue"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/event_user_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/post_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/circular_std_book"
+                android:gravity="start"
+                android:text="Blog Date"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/event_user_name"
+                app:layout_constraintTop_toBottomOf="@+id/event_user_name" />
+
+
+            <TextView
+                android:id="@+id/post_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:fontFamily="@font/circular_std_book"
+                android:gravity="end"
+                android:text="00:00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/event_user_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@color/grey" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <com.flaviofaria.kenburnsview.KenBurnsView
+            android:id="@+id/event_image"
+            android:layout_width="352dp"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            app:srcCompat="@drawable/rectangle" />
+
+        <TextView
+            android:id="@+id/event_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#80000000"
+            android:ellipsize="end"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="start"
+            android:maxLines="2"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/event_image" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/event_end_date"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="#80000000"
+            android:ellipsize="end"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="start"
+            android:maxLines="2"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/event_image" />
+
+        <TextView
+            android:background="#80000000"
+            android:id="@+id/event_title"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/circular_std_book"
+            android:gravity="start"
+            android:maxLines="2"
+            android:text="Lorem Ipsum Dolor Sit Amet"
+            android:textColor="@color/white"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

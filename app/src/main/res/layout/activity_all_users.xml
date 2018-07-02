@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thenetwork.app.android.thenetwork.Activities.AllUsersActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:titleTextAppearance="@style/TitleBarTextAppearance"
+        android:id="@+id/all_users_toolbar"
+        android:layout_width="match_parent"
+        app:layout_collapseMode="pin"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:theme="@style/Theme.AppCompat.Light">
+    </android.support.v7.widget.Toolbar>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/all_users_toolbar"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/users_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>

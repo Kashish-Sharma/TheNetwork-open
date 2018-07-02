@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/touch_selector"
+    android:id="@+id/user_all_root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/AlluserSingleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/oxygen_regular"
+        android:minWidth="160dp"
+        android:paddingBottom="2dp"
+        android:textColor="@color/dark_blue"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/AlluserSingleStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:maxWidth="200dp"
+        app:layout_constraintStart_toStartOf="@+id/AlluserSingleName"
+        app:layout_constraintTop_toBottomOf="@+id/AlluserSingleName" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="72dp"
+        android:layout_height="72dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/AlluserSingleImage"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ellipse" />
+
+        <ImageView
+            android:id="@+id/Allcheck_multi_select"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/circle_on_long_press"
+            android:padding="5dp"
+            android:src="@drawable/ic_check_white"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

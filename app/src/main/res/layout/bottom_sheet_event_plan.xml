@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    style="?attr/bottomSheetStyle"
+    android:id="@+id/bottom_sheet_event"
+    android:divider="?android:attr/listDivider"
+    android:padding="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white">
+
+
+    <LinearLayout
+        android:layout_marginBottom="12dp"
+        android:id="@+id/date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <TextView
+            android:contentDescription="imagePhone"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:text="Day"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:background="@color/off_white"
+            android:padding="5dp" />
+
+
+        <LinearLayout
+            android:id="@+id/day_selecter_linear_layout"
+            android:weightSum="5"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:background="@drawable/edit_settings_bg"
+                android:id="@+id/removeDay"
+                android:layout_weight="1"
+                android:src="@drawable/ic_remove_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:text="1"
+                android:background="@drawable/edit_settings_bg"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/event_date_spinner"
+                android:layout_width="30dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="3"
+                android:textSize="20sp"/>
+            <ImageView
+                android:background="@drawable/edit_settings_bg"
+                android:id="@+id/addDay"
+                android:layout_weight="1"
+                android:src="@drawable/ic_add_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="12dp"
+        android:id="@+id/day_event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <ImageView
+            android:contentDescription="imagePhone"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@color/off_white"
+            android:padding="5dp"
+            android:src="@drawable/ic_create_black_24dp" />
+
+        <EditText
+            android:maxLines="2"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:maxWidth="250dp"
+            android:inputType="textMultiLine"
+            android:id="@+id/event_day_name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/edit_settings_bg"
+            android:layout_width="250dp"
+            android:layout_height="36dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="7">
+
+        <ImageView
+            android:contentDescription="imageLock"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/off_white"
+            android:padding="5dp"
+            android:src="@drawable/ic_access_alarm_black_24dp" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/event_day_time_from"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_weight="3"
+            android:background="@drawable/edit_settings_bg" />
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/event_day_time_to"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_weight="3"
+            android:background="@drawable/edit_settings_bg" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:paddingBottom="20dp"
+        android:text="Your event will be removed after 30 days"/>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/event_day_add_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@color/colorAccent"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/off_white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/confirm_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/colorAccent"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="@color/off_white"
+                android:textSize="22sp" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:id="@+id/confirm_event_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thenetwork.app.android.thenetwork.Activities.selectImageActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <include
+        android:id="@+id/select_image_app_bar"
+        layout="@layout/app_bar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/select_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_image_app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerInside"
+        android:maxHeight="400dp"
+        android:src="@drawable/rectangle" />
+
+    <EditText
+        android:id="@+id/select_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/select_imageview"
+        android:fontFamily="@font/circular_std_book"
+        android:gravity="start"
+        android:hint="Your message here"
+        android:inputType="textMultiLine"
+        android:minHeight="60dp"
+        android:paddingBottom="4dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="22sp" />
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/select_image_app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="91dp"
+        android:indeterminate="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_image_app_bar" />
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/select_image_fab"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/select_edittext"
+        android:layout_alignEnd="@+id/select_imageview"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/send_icon"
+        app:layout_constraintBottom_toTopOf="@+id/select_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/select_imageview"
+        app:layout_constraintVertical_bias="1.0" />
+
+   </RelativeLayout>
+
+</ScrollView>

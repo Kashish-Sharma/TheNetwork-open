@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="comment_recycler_view_height">400dp</dimen>
+    <dimen name="comment_pop_up_height">450dp</dimen>
+    <dimen name="comment_pop_up_width">300dp</dimen>
+</resources>

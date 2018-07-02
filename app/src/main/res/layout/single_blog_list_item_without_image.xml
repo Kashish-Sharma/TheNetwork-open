@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/single_linear_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/single_linear_layout_card_without_image"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="2dp"
+        android:backgroundTint="#F8F8F8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:theme="@style/CardView.Light"
+        app:cardElevation="6dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/blog_user_image_without_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@color/grey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingEnd="20dp">
+
+
+
+                    <TextView
+                        android:id="@+id/blog_user_name_without_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="2dp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/circular_std_book"
+                        android:gravity="start"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:text="Username" />
+
+
+                    <TextView
+                        android:id="@+id/blog_date_without_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:text="Blog Date" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/blog_time_without_image"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:fontFamily="@font/circular_std_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11:30pm"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/text_container_without_image"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/blog_title_without_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/circular_std_book"
+                    android:gravity="start"
+                    android:maxLines="2"
+                    android:textColor="@color/dark_blue"
+                    android:textSize="18sp"
+                    android:text="Lorem Ipsum Dolor Sit Amet" />
+
+                <TextView
+                    android:id="@+id/blog_desc_without_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/circular_std_book"
+                    android:gravity="start"
+                    android:maxLines="5"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    android:text="@string/lorem_ipsum_paragraph" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:paddingStart="8dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/blog_like_btn_without_image"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/action_normal_like" />
+
+                    <TextView
+                        android:id="@+id/blog_like_count_without_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="4dp"
+                        android:fontFamily="@font/circular_std_book"
+                        android:text="0 Likes" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comment_layout_without_image"
+                    android:gravity="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+                    <ImageView
+                        android:layout_gravity="end"
+                        android:id="@+id/blog_comment_btn_without_image"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:src="@drawable/ic_comment_black_24dp" />
+                    <TextView
+                        android:gravity="end"
+                        android:layout_marginStart="4dp"
+                        android:id="@+id/blog_comment_count_without_image"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 Comments"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

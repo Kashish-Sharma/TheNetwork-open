@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thenetwork.app.android.thenetwork.Activities.NewEventActivity">
+
+    <RelativeLayout
+        android:background="@color/white"
+        android:id="@+id/newEventRootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/event_card"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:theme="@style/CardView.Light"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/place_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:elevation="20dp"
+                android:src="@drawable/location_search" />
+
+
+            <ImageView
+                android:id="@+id/event_card_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/rectangle" />
+
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/event_card"
+            android:background="@drawable/gray_border_bottom"
+            android:id="@+id/relLayout4"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_title"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_title"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/circular_std_book"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:background="@null"
+                android:textSize="24sp"
+                android:textColor="#000"
+                android:inputType="textNoSuggestions"
+                android:hint="Title"/>
+
+        </RelativeLayout>
+
+
+        <!-- description section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/relLayout4"
+            android:background="@drawable/gray_border_bottom"
+            android:id="@+id/relLayout5"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_description"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:fontFamily="@font/circular_std_book"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:id="@+id/event_desc"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:ems="10"
+                android:focusable="true"
+                android:gravity="top"
+                android:hint="Add a description..."
+                android:isScrollContainer="true"
+                android:maxLength="1000"
+                android:maxLines="20"
+                android:background="@null"
+                android:inputType="textMultiLine" />
+
+        </RelativeLayout>
+
+
+</RelativeLayout>
+</ScrollView>
