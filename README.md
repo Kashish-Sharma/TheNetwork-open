@@ -7,7 +7,7 @@ Before you continue
 * Include your own project's gradle Fields in "google services.json" file. Without that the app wont run.<br>
 * Generate and add your own places api [key](https://developers.google.com/places/web-service/intro) in the manifest accordingly.<br>
 * Enable google signin and signin with email from your firebase dashboard.
-* Deploy firebase cloud functions provided in [cloud-functions](https://cloud.google.com/functions/docs/)
+* Deploy firebase cloud functions provided in [cloud-functions](https://github.com/Kashish-Sharma/TheNetwork-open/tree/master/cloud-functions) directory.
 
 Description
 ---------
